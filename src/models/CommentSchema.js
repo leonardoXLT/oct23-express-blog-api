@@ -8,7 +8,8 @@ const mongoose = require("mongoose");
 
 const commentSchema = mongoose.Schema({
 	author: {
-		type: {type: mongoose.Schema.Types.ObjectId, ref: "User"},
+		type: mongoose.Schema.Types.ObjectId, 
+		ref: "User",
 		required: true
 	},
 	content: {
@@ -21,3 +22,6 @@ const commentSchema = mongoose.Schema({
 	}
 });
 
+module.exports = {
+	commentSchema
+}
