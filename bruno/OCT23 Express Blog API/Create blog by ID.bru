@@ -1,0 +1,17 @@
+meta {
+  name: Create blog by ID
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/blogs/findManyQuery
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "author":"66761e4b2167a21065d84b6e"
+  }
+}
