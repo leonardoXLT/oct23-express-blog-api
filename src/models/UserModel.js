@@ -17,6 +17,12 @@ const userSchema = mongoose.Schema({
 		required: false, 
 		unique: false
 	},
+	password: {
+		type: String,
+        required: true,
+        unique: false
+    },
+	}
 	// comments: {
 	// 	// These are NOT the same comments as what the Blogs contain, they just reuse the comment schema
 	// 	types: [commentSchema],
